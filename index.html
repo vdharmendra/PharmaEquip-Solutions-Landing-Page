@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaEquip Solutions | Empowering Pharma Innovation with Precision Equipment Socail Media Campaign  </title>
+    <meta name="description" content="PharmaEquip Solutions provides high-quality, precision-driven pharmaceutical machinery designed to enhance productivity and ensure compliance. Discover reliable, innovative equipment for tablet production, capsule filling, and more.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MAIN SECTION -->
+    <div class="main">
+        <!-- NAVIGATION SECTION -->
+        <nav>
+            <div class="logo">
+                <a href="#">PharmaEquip</a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- FEATURE SECTION -->
+        <div class="feature">
+            <div class="overlay"></div>
+            <img src="./img/main-img.png" class="feature-img" alt="">
+            <div id="circle">
+                <div class="card one">
+                    <img src="./img/i2.png" alt="">
+                    <div>
+                        <h1>High Efficiency</h1>
+                        <p>Cake Pharma machines are built for high-speed operation, capable of producing large quantities of tablets or cakes in a short amount of time, improving overall productivity.</p>
+                    </div>
+                </div>
+                <div class="card two">
+                    <img src="./img/i1.png" alt="">
+                    <div>
+                        <h1>Automatic Tablet Formation</h1>
+                        <p>These machines are designed to automatically form cakes or tablets with precise weight and shape, ensuring consistency in production.</p>
+                    </div>
+                    
+                </div>
+                <div class="card three">
+                    <img src="./img/i3.png" alt="">
+                    <div>
+                        <h1>Hygienic Design</h1>
+                        <p>The machines are made from materials that are easy to clean, which is essential for maintaining hygiene standards in pharmaceutical manufacturing. Stainless steel construction is common to prevent contamination.</p>
+                    </div>
+                </div>
+                <div class="card four">
+                    <img src="./img/i4.png" alt="">
+                    <div>
+                        <h1>Advanced Control Systems</h1>
+                        <p>These machines often include PLC (Programmable Logic Controllers) or touchscreen interfaces for easy monitoring and control of the production process, ensuring quality control and reducing human error.</p>
+                    </div>
+                </div>
+                <!-- <div class="card five">
+                    <img src="./img/i5.png" alt="">
+                </div> -->
+            </div>
+        </div>
+        <div class="controls">
+            <img src="./img/up.png" id="upBtn" alt="">
+            <h3>Features</h3>
+            <img src="./img/down.png" id="downBtn" alt="">
+        </div>
+    </div>
+    <script>
+        
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rorateValue = circle.style.transform;
+
+        var rotateSum;
+
+        upBtn.onclick = function(){
+            rotateSum = rorateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+
+            rorateValue = rotateSum;
+        }
+
+        downBtn.onclick = function(){
+            rotateSum = rorateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+
+            rorateValue = rotateSum;
+        }
+    </script>
+    
+</body>
+</html>
