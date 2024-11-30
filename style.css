@@ -9,7 +9,7 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to right, #9c27d0, #8ecdff);
+    background: linear-gradient(to right, #2751d0, #8ef1ff);
 
 }
 /* NAVIGATION SECTION STYLING */
@@ -21,12 +21,15 @@ nav{
     display: flex;
     align-items: center;
 }
+nav.anim{
+    animation-delay: 0.1s;
+}
 .logo{
     flex-basis: 20%;
 }
 .logo a{
     width: auto;
-    color: #fff;
+    color: #2751d0;
     font-weight: 700;
     font-family: cursive;
     text-decoration: none;
@@ -46,7 +49,9 @@ nav{
     margin: 0 20px;
 }
 .nav-links ul li a{
-    color: #fff;
+    color: #01289e;
+    font-weight: 500;
+    font-family: cursive;
     text-decoration: none;
 }
 /* FEATURE SECTION STYLING */
@@ -58,6 +63,9 @@ nav{
     left: -10%;
     transform: translateY(-50%);
 
+}
+.feature-img.anim{
+    animation-delay:0.2s;
 }
 #circle{
     width: 1000px;
@@ -76,42 +84,49 @@ nav{
 .card{
     position: absolute;
     display: flex;
-    color: #fff;
-    align-items: center;
+    color: #000;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 350px;
 }
 .card div{
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 .card div h1{
     font-size: 32px;
     font-family: cursive;
+    animation-delay:0.3s;
 }
 .card div p{
     margin-top: 15px;
+    animation-delay:0.35s;
 }
 .one{
-    top: 450px;
-    right: 50px;
+    top: 400px;
+    right: -50px;
 }
 .two{
-    top: 150px;
+    top: 0px;
     left: 350px;
     transform: rotate(-90deg);
 }
 .three{
-    top: 450px;
-    left: 50px;
+    top: 375px;
+    left: -50px;
+
     transform: rotate(180deg);
 }
 .four{
-    bottom: 150px;
-    right: 350px;
+    bottom: -25px;
+    right: 360px;
+
     transform: rotate(90deg);
 }
 .feature-img{
     width: 420px;
     position: absolute;
-    top: 50%;
+    top: 28%;
     left: 25%;
     transform: translateY(-50%);
     z-index: 99;
@@ -127,12 +142,22 @@ nav{
     margin: 15px 0;
     color: #fff;
 }
+.controls.anim{
+    animation-delay:0.5s;
+}
 #upBtn,
 #downBtn{
     width: 15px;
     cursor: pointer;
     mix-blend-mode: multiply;
     -webkit-mix-blend-mode: multiply;
+    transition: 0.3s ease-in;
+}
+#upBtn:hover{
+    transform: translateY(-10px);
+}
+#downBtn:hover{
+    transform: translateY(10px);
 }
 .overlay{
     width: 0;
@@ -144,4 +169,17 @@ nav{
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 99;
+}
+/* ANIMATION EFFECT */
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

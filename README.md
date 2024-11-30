@@ -10,8 +10,8 @@
 
 ## Desgin 
 <ul>
-  <li>Hero Banner</li>
-  <li>Banner Background Image Effect, Banner title and Prodcut animation and Slider animation </li>
+  <li>Feature Section</li>
+  <li>Feature Image Effect, Feature title and description animation and Slider animation </li>
 </ul>
 
 ###### Lang
@@ -22,17 +22,25 @@
   <li>Font Awesome</li>
   <li>Google Font</li>
   <li>images from freepik</li>
-  <li>desgin in Abode XD</li>
+  <li>FlatIcon</li>
+  <li>UI UX Layout</li>
+  <li>Desgin in Abode XD</li>
 </ul>
 <br>
 <span>Desktop Desgin</span><br/>
-<a href="https://www.behance.net/gallery/212133257/Grind-Coffee-Grind-Coffee-Landing-Page" target="_blank" >
-<img src="./img/school--backpack-landing-page.gif" width="575px"/>
+<a href="" target="_blank" >
+<img src="" width="575px"/>
 </a>
-<a href="https://www.behance.net/gallery/212133257/Grind-Coffee-Grind-Coffee-Landing-Page" target="_blank" >
-<img src="./img/cover.png" width="575px"/>
+<br />
+<span>UI UX LAYOUT</span><br/>
+<a href="" target="_blank" >
+<img src="./img/cover.png" width="325px"/>
 </a>
-
+<br />
+<span>Cover </span><br/>
+<a href="" target="_blank" >
+<img src="./img/cover.png" width="325px"/>
+</a>
 
 
 
