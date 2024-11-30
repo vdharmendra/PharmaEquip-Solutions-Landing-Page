@@ -29,7 +29,7 @@
 <br>
 <span>Desktop Desgin</span><br/>
 <a href="" target="_blank" >
-<img src="" width="575px"/>
+<img src="./img/PharmaEquip-landing-page.gif" width="575px"/>
 </a>
 <br />
 <span>UI UX LAYOUT</span><br/>
