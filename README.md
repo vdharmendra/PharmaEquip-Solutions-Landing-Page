@@ -34,7 +34,7 @@
 <br />
 <span>UI UX LAYOUT</span><br/>
 <a href="" target="_blank" >
-<img src="./img/cover.png" width="325px"/>
+<img src="./img/ui-ux-layout.png" width="325px"/>
 </a>
 <br />
 <span>Cover </span><br/>
